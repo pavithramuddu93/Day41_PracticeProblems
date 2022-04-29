@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body {
+            padding: 2em;
+        }
+
+        .headerContainer {
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background: tomato;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        .footerContainer {
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background: lightgreen;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        .mainContainer {
+            display: flex;
+            flex-flow: row wrap;
+            font-weight: bold;
+            text-align: center;
+        }
+        .mainContentItem{
+            text-align: left;
+            background: deepskyblue;
+        }
+        article{
+            padding: 10px;
+            margin: 10px;
+            background: aqua;
+        }
+        .sideBarLeftItem{
+            background: gold;
+        }
+        .sideBarRightItem{
+            background:hotpink;
+        }
+        .sideBarItem{
+            flex: 1 0 0 ;
+            border: 0px solid green;
+        }
+        .mainContentItem{
+            flex: 3 10px;
+        }
+        .sideBarLeftItem{order: 1;}
+        .mainContentItem{order: 2;}
+        .sideBarRightItem{order: 3;}
+    </style>
+</head>
+
+<body>
+    <header class="headerContainer">
+        <h1>HEADER - Sample Flexbox Example</h1>
+    </header>
+    <div class="mainContainer">
+        <section class="mainContentItem">
+            <article>
+                <h2>First Article</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis fugit quidem nam iure consequuntur magnam dolorem minus excepturi, voluptatibus quod expedita id dolorum ea eius hic tempora libero, veniam debitis!
+                </p>
+            </article>
+            <article>
+                <h2>Second Article</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis fugit quidem nam iure consequuntur magnam dolorem minus excepturi, voluptatibus quod expedita id dolorum ea eius hic tempora libero, veniam debitis!
+                </p>
+            </article>
+            <article>
+                <h2>Third Article</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis fugit quidem nam iure consequuntur magnam dolorem minus excepturi, voluptatibus quod expedita id dolorum ea eius hic tempora libero, veniam debitis!
+                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae harum officiis ratione neque, corporis at est sunt repellat eius, quasi cupiditate pariatur sit assumenda magni fugit, id numquam eligendi quibusdam.
+                </p>
+            </article>
+        </section>
+        <sideBar class="sideBarItem sideBarLeftItem">
+            <div class="center">
+                <p>Left Side Bar</p>
+            </div>
+        </sideBar>
+        <sideBar class="sideBarItem sideBarRightItem">
+            <div class="center">
+                <p>Right Side Bar</p>
+            </div>
+        </sideBar>
+    </div>
+    <footer class="footerContainer">Footer</footer>
+</body>
+
+</html>
